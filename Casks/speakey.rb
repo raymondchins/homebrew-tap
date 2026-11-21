@@ -2,8 +2,7 @@ cask "speakey" do
   version :latest
   sha256 :no_check
 
-  url "https://github.com/raymondchins/speakey-releases/releases/latest/download/Speakey.dmg",
-      verified: "github.com/raymondchins/speakey-releases/"
+  url "https://github.com/raymondchins/speakey-releases/releases/latest/download/Speakey.dmg"
   name "Speakey"
   desc "Voice dictation, rewriting and computer control"
   homepage "https://getspeakey.com/"
