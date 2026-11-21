@@ -1,12 +1,18 @@
 cask "speakey" do
-  version :latest
-  sha256 :no_check
+  version "1.2.48"
+  sha256 "0be619c96c706292d243fa8e7eaf4e8c01f9aaf924d9e5981e5a3f4264b132d3"
 
-  url "https://github.com/raymondchins/speakey-releases/releases/latest/download/Speakey.dmg"
+  url "https://github.com/raymondchins/speakey-releases/releases/download/v#{version}/Speakey.dmg"
   name "Speakey"
   desc "Voice dictation, rewriting and computer control"
   homepage "https://getspeakey.com/"
 
+  livecheck do
+    url "https://github.com/raymondchins/speakey-releases/releases/latest/download/appcast.xml"
+    strategy :sparkle, &:short_version
+  end
+
+  auto_updates true
   depends_on arch: :arm64
   depends_on macos: :sonoma
 
