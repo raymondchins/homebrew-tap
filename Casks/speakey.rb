@@ -5,11 +5,10 @@ cask "speakey" do
   url "https://github.com/raymondchins/speakey-releases/releases/latest/download/Speakey.dmg",
       verified: "github.com/raymondchins/speakey-releases/"
   name "Speakey"
-  desc "Voice layer for dictation, rewriting and running the Mac"
+  desc "Voice dictation, rewriting and computer control"
   homepage "https://getspeakey.com/"
 
-  auto_updates true
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "Speakey.app"
 
