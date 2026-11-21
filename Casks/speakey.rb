@@ -7,6 +7,7 @@ cask "speakey" do
   desc "Voice dictation, rewriting and computer control"
   homepage "https://getspeakey.com/"
 
+  depends_on arch: :arm64
   depends_on macos: :sonoma
 
   app "Speakey.app"
