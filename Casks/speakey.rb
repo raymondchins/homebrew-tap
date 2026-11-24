@@ -1,6 +1,6 @@
 cask "speakey" do
-  version "1.2.50"
-  sha256 "81dc9b5744e9078b20eb426284a560f37a8ab82394f7927f0a7041f0efd0216f"
+  version "1.2.51"
+  sha256 "03ff5130db304052d6dfa1ff9069eb89500cae0db4c4904cf540ebb7177f7747"
 
   url "https://github.com/raymondchins/speakey-releases/releases/download/v#{version}/Speakey.dmg"
   name "Speakey"
